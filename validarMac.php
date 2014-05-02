@@ -17,11 +17,11 @@
 
 		<div class = "container">
 			<form method="post">
-			<h1>
+			<h2>
 				<center>
 					Direcci&oacute;n MAC
 				</center>
-			</h1>
+			</h2>
 			<input type="text" class="form-control" placeholder="Introducir direcci&oacute;n MAC" name="macadd"><br>
 
 			</form>
@@ -51,7 +51,7 @@
 
 				}
 				else{
-					echo "No asignada";
+					echo "No asignada debido a que la direcci&oacute;n MAC no es correcta o ya no quedan direcciones fijas disponibles";
 				}
 			?>
 		</div>
