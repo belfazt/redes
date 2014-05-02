@@ -2,9 +2,18 @@
 	<title>
 	Login
 	</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/code_examples/tutorial.css">
 
 </head>
-<link rel="stylesheet" type="text/css" href="/code_examples/tutorial.css">
 <script type="text/javascript">
 function checkPass()
 {
@@ -40,16 +49,22 @@ function checkPass()
     }
 }
 </script>
-<div class="tutorialWrapper">
-    <form>
-        <!--<div class="fieldWrapper">
-            <label for="pass1">Password:</label>
-            <input name="pass1" id="pass1" type="password">
-        </div>-->
-        <div class="fieldWrapper">
-            <label for="pass2">Contrase&ntilde;a:</label>
-            <input name="pass2" id="pass2" onkeyup="checkPass(); return false;" type="password">
-            <span id="confirmMessage" class="confirmMessage"></span>
-        </div>
-    </form>
-</div>
+<body>
+    <div class="container">
+        <form>
+            <!--<div class="fieldWrapper">
+                <label for="pass1">Password:</label>
+                <input name="pass1" id="pass1" type="password">
+            </div>-->
+            <div class="form-group">
+                <label for="pass2">Contrase&ntilde;a:</label>
+                <input name="pass2" id="pass2" class="form-control" onkeyup="checkPass(); return false;" type="password">
+                <span id="confirmMessage" class="confirmMessage"></span>
+            </div>
+        </form>
+
+    </div>
+
+
+
+</body>
