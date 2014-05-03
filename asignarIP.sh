@@ -30,12 +30,13 @@ if (( numero < 11 )) ;
 		  fixed-address $ip;
 	}" >> /etc/dhcpd.conf	
 	let numero++;
+	echo $numero > /var/www/html/redes/numActual
+	echo "Se asign&oacute; la direcci&oacute;n IP $ip a la direcci&oacute;n MAC $1"
 else
-	numero=$(head -n 1 /var/www/html/redes/numUno)	
+	echo "No se pudo asignar una direcci&oacute;n ip est&aacute;"
 fi
 
 
-echo $numero > /var/www/html/redes/numActual
-echo $ip
+
 
 

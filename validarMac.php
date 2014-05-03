@@ -30,17 +30,17 @@
 			$mac = ($_POST[macadd]);
 			$asignar = preg_match('/^[0-9a-fA-F]{2}(?=([:;.]?))(?:\\1[0-9a-fA-F]{2}){5}$/i', $mac);
 			if ($asignar){
-					echo "Asignando direcci&oacute;n IP ".exec ("sudo bash /var/www/html/redes/asignarIP.sh $mac"). " a la direcci&oacute;n MAC ".$mac;
+					echo exec ("sudo bash /var/www/html/redes/asignarIP.sh $mac");
 				}
 				else{
-					echo "No asignada debido a que la direcci&oacute;n MAC no es correcta o ya no quedan direcciones fijas disponibles";
+					echo "Direcci&oacute; MAC no v&aacute;lida";
 				}
 			?>
 			</div>
-		<div class = "alert alert-warning">
+		<!--<div class = "alert alert-warning">
 			
 				Si no aparece ninguna dirección IP, favor de volver a introducir tu direcci&oacute;n MAC
-		</div>
+		</div>-->
 
 
 
