@@ -3,6 +3,7 @@
 	Login
 	</title>
     <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,41 +17,7 @@
     <!-- Latest compiled and minified JavaScript -->
 
 </head>
-<script type="text/javascript">
-function checkPass()
-{
-
-    //Store the password field objects into variables ...
-    //var pass1 = document.getElementById('pass1');
-    var pass1 = "cacariza";
-    var pass2 = document.getElementById('pass2');
-    //Store the Confimation Message Object ...
-    //var message = document.getElementById('confirmMessage');
-    //Set the colors we will be using ...
-    //var goodColor = "#66cc66";
-    //var badColor = "#ff6666";
-    //Compare the values in the password field
-    //and the confirmation field
-    if(pass1 == pass2.value){
-        //The passwords match.
-        //Set the color to the good color and inform
-        //the user that they have entered the correct password
-        //pass2.style.backgroundColor = goodColor;
-        //message.style.color = goodColor;
-        //message.innerHTML = "Passwords Match!"
-        window.location.assign('menu.php');
-    }
-    else{
-        //The passwords do not match.
-        //Set the color to the bad color and
-        //notify the user.
-        //pass2.style.backgroundColor = badColor;
-        //message.style.color = badColor;
-        //message.innerHTML = "Passwords Do Not Match!"
-        //window.location.assign('');
-    }
-}
-</script>
+    <script src="js/checkPass.js" type="text/javascript"></script>
 <body>
     <div class="container">
         <form>
