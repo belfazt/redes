@@ -34,7 +34,7 @@
 					echo exec ("sudo bash /var/www/html/redes/asignarIP.sh $mac");
 				}
 				else{
-					echo "Direcci&oacute; MAC no v&aacute;lida";
+					echo "Direcci&oacute;n MAC no v&aacute;lida";
 				}
 			?>
 			</div>
