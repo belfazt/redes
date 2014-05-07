@@ -32,6 +32,10 @@
 			$asignar = preg_match('/^[0-9a-fA-F]{2}(?=([:;.]?))(?:\\1[0-9a-fA-F]{2}){5}$/i', $mac);
 			if ($asignar){
 					echo exec ("sudo bash /var/www/html/redes/asignarIP.sh $mac");
+					exec("sudo killall dhcpd");
+					//echo("Servidor apagado \n");
+					exec("sudo dhcpd -cf /etc/dhcpd.conf");
+					//echo("Servidor encendido");
 				}
 				else{
 					echo "Direcci&oacute;n MAC no v&aacute;lida";
