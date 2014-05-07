@@ -23,12 +23,12 @@
 #route add -net 192.168.1.0/24 gw 192.168.10.1 dev eth0
 #route add -net 171.160.1.0/24 gw 192.168.10.1 dev eth0
 
-route add -net 192.168.1.0/24 gw 192.168.9.13 dev eth0
-route add -net 192.168.2.0/24 gw 192.168.9.13 dev eth0
-route add -net 192.168.3.0/24 gw 192.168.9.13 dev eth0
-route add -net 192.168.4.0/24 gw 192.168.9.13 dev eth0
-route add -net 192.168.5.0/24 gw 192.168.9.13 dev eth0
-route add -net 192.168.6.0/24 gw 192.168.9.13 dev eth0
-route add -net 192.168.7.0/24 gw 192.168.9.13 dev eth0
-route add -net 192.168.8.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.1.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.2.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.3.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.4.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.5.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.6.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.7.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.8.0/24 gw 192.168.9.13 dev eth0
 
