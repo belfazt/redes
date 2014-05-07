@@ -31,4 +31,5 @@ sudo route add -net 192.168.5.0/24 gw 192.168.9.13 dev eth0
 sudo route add -net 192.168.6.0/24 gw 192.168.9.13 dev eth0
 sudo route add -net 192.168.7.0/24 gw 192.168.9.13 dev eth0
 sudo route add -net 192.168.8.0/24 gw 192.168.9.13 dev eth0
+sudo route add -net 192.168.9.0/28 gw 192.168.9.13 dev eth0
 
